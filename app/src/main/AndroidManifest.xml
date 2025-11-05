@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.ACTIVITY_RECOGNITION" />
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" tools:targetApi="33" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE_HEALTH" tools:targetApi="34"/>
+
+    <application
+        android:supportsRtl="true"
+        android:theme="@style/Theme.MaterialComponents.DayNight.NoActionBar">
+
+        <activity android:name="com.example.fitnesstracker.MonthlyStepsActivity" />
+        <activity android:name="com.example.fitnesstracker.WeeklyStepsActivity" />
+        <activity android:name="com.example.fitnesstracker.MainActivity" />
+        <activity android:name="com.example.fitnesstracker.RegistrationActivity" />
+
+        <activity
+            android:name="com.example.fitnesstracker.LoginActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <service
+            android:name="com.example.fitnesstracker.StepService"
+            android:exported="false"
+            android:foregroundServiceType="health" />
+
+    </application>
+</manifest>
