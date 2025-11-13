@@ -7,14 +7,16 @@ It helps users manage their fitness activities — track workouts, steps, and ca
 Splash	Home	Workout Log	Progress Chart
 ## 📱 App Screens
 
-| Splash | Home | Day-wise | Month-wise |
-|--------|------|-----------|-------------|
-| <img src="Login_Page.png" width="200"/> | <img src="screenshots/home.png" width="200"/> | <img src="screenshots/daywise.png" width="200"/> | <img src="screenshots/monthwise.png" width="200"/> |
+| Register | Login | Home Page | Week Chart | Month Chart |
+|--------|------|-----------|-------------|---------------|
+| <img src="Register_Page.png" width="200"/> | <img src="Login_page.png" width="200"/> | <img src="Home_Page.png" width="200"/> | <img src="week_chart.png" width="200"/> | <img src="Month_Chart.png" width="200"/> |
 
 
-(Note: Replace the screenshot URLs with the actual paths if they differ in the repository.)
 
-✨ Features
+
+
+
+## ✨ Features
 
 Log and edit workouts (exercise type, duration, calories burned)
 
@@ -30,7 +32,7 @@ Uses local storage (SQLite) — no online database required
 
 Built with Kotlin and XML layouts
 
-🛠️ Technologies Used
+## 🛠️ Technologies Used
 
 Language: Kotlin
 
@@ -42,4 +44,4 @@ UI Components: ConstraintLayout, RecyclerView, CardView, EditText, Button
 
 Storage: SQLite
 
-👨‍💻 Developed by Thakkar Mitkumar Bharatb
+👨‍💻 Developed by Chaudhari Anshu Mansangbhai
